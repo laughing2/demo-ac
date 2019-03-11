@@ -1,6 +1,6 @@
 <?php
 session_start();
-//error_reporting(0);     //PHP运行出现Notice : Notice: Undefined index的原因及解决办法
+error_reporting(0);     //PHP运行出现Notice : Notice: Undefined index的原因及解决办法
 require "conn/conn.php";
 $my_username = isset($_POST['username'])? $_POST['username'] : '';
 if($my_username!='') {
@@ -43,28 +43,7 @@ if($my_username!='') {
 		$_SESSION['loggd']='login';
 		$_SESSION['user_img']=$my_user_fullurl;  //'assets/img/user04.png';
 		$_SESSION['pu_user_img']=$my_user_fullurl;  //'../assets/img/user04.png';
-	    
-//	    $expire=time()+60*60*24*30;
-//	    $mg_login = 'mg_login';
-//		setcookie("mg_username", $username, $expire, '/');
-//	    setcookie("mg_userrole", $userrole, $expire, '/');
-//	    setcookie("mg_login", $mg_login, $expire, '/');
-//	    $user_img = 'assets/img/user04.png';
 
-
-	  //   echo "登录成功";
-	  //   echo 'Welcome, mg_username =  '.$_SESSION['mg_username']; 
-	  //   echo '<br/>loggd = , '.$_SESSION['loggd']; 
-	  //   echo "<br/> username = ".$_SESSION['mg_username'];
-	  //   echo "<br/> userrole = ".$_SESSION['mg_userrole'];
-		// echo "<br/> user_img = ".$_SESSION['user_img'];
-		// echo "<br/> pu_user_img = ".$_SESSION['pu_user_img'];
-		
-//	    echo "<br/> mg_username：". $_COOKIE["mg_username"];
-//	    echo "<br/> mg_userrole：". $_COOKIE["mg_userrole"];
-//	    echo "<br/> mg_login：". $_COOKIE["mg_login"];
-
-		// echo "<br/> mg_userrole =".$_SESSION['mg_userrole'];
 
 		switch ($_SESSION['mg_userrole'])
 		{

@@ -1,4 +1,5 @@
 <?php
+// ediit by james 2019.3.11
 session_start();
 error_reporting(0);     //PHP运行出现Notice : Notice: Undefined index的原因及解决办法
 require "conn/conn.php";

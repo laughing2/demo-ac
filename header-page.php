@@ -2,7 +2,7 @@
         <div class="am-topbar-brand">
             <a href="javascript:;" class="tpl-logo">
                 <!-- <img src="../assets/img/logo.png" alt=""> -->
-                <span style="color:#000000;">学工系统后台</span>
+                <span style="color:#000000;"><?php echo "学工系统后台";?></span>
             </a>
         </div>
         <div class="am-icon-list tpl-header-nav-hover-ico am-fl am-margin-right">

@@ -43,7 +43,7 @@
             <ol class="am-breadcrumb">
                 <li><a href="#" class="am-icon-home">首页</a></li>
                 <li><a href="#">学生信息管理</a></li>
-                <li class="am-active">添加</li>
+                <li class="am-active">添加11</li>
             </ol>
             <div class="tpl-portlet-components">
                 <div class="portlet-title">
